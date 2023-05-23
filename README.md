@@ -1,8 +1,6 @@
-Certainly! Here's the updated README.md:
-
-# Insincere Question Classification: Unmasking Deception on Quora
-
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+# Quora Insincere Question Classifier
+---
+## Insincere Question Classification: Unmasking Deception on Quora
 
 This repository contains the code and resources for the project on insincere question classification on Quora. The goal of this project is to develop a machine learning model that can accurately identify and classify insincere or deceptive questions on the Quora platform.
 
@@ -15,28 +13,24 @@ The project utilizes the Quora Insincere Questions Classification dataset, which
 - `target`: Binary label indicating whether the question is insincere (1) or sincere (0)
 
 ## Methodology
-The project follows a supervised learning approach to tackle the problem of insincere question classification. It involves several key steps, including data preprocessing, feature extraction, model selection and training, model evaluation, and fine-tuning. Various machine learning algorithms and natural language processing techniques are explored to build an effective classification model.
+The project follows a supervised learning approach to tackle the problem of insincere question classification. It involves several key steps, including data collection, data preprocessing, feature extraction, model selection, model training, and model evaluation.
 
 ### Approach
-1. Data Preprocessing: Text data is preprocessed by tokenization, lowercasing, and removal of stop words and punctuation. Techniques like stemming or lemmatization may be applied for further normalization.
+1. Data Collection: The Quora Insincere Questions Classification dataset is collected and downloaded from Kaggle. The data structures and features will be explored to gain a better understanding of the dataset.
 
-2. Feature Extraction: The preprocessed text data is transformed into a numerical representation suitable for machine learning algorithms. Common methods for feature extraction in NLP, such as Bag-of-Words, TF-IDF, and word embeddings (e.g., Word2Vec or GloVe), are considered.
+2. Data Preprocessing: Text data is preprocessed by tokenization, lowercasing, and removal of stop words and punctuation. 
 
-3. Model Selection and Training: Different classification algorithms, including logistic regression, support vector machines (SVM), decision trees, random forests, and deep learning models (e.g., recurrent neural networks or transformers), are explored. Models are trained and evaluated using appropriate evaluation metrics, such as accuracy, precision, recall, and F1-score.
+3. Feature Extraction: The preprocessed text data will be transformed into numerical representations suitable for machine learning algorithms. For this project, we will be using word embeddings, such as Word2Vec or GloVe, to convert the text into dense vector representations that capture semantic relationships between words.
 
-4. Model Evaluation and Fine-tuning: Performance evaluation is conducted using techniques like cross-validation and holdout validation. Based on the results, the chosen model is fine-tuned by adjusting hyperparameters to optimize its performance.
+4. Model Selection and Training: For this project, we will explore various NLP models suitable for insincere question classification, such as recurrent neural networks (RNNs), convolutional neural networks (CNNs), long short term memory (LSTM), or transformer models like BERT. These models have shown promising results in NLP tasks and can capture complex patterns and dependencies in text data. We will select the most appropriate model based on its performance on the validation dataset and train it using the labeled training dataset.
 
-5. Model Deployment: Once a satisfactory model is developed, deployment options are considered. This may involve integrating the model into an application or building an API for real-time classification of new questions.
+5. Model Evaluation: The trained NLP model will be evaluated using appropriate evaluation metrics, such as accuracy, precision, recall, and F1-score. The performance of the model will be assessed on the test dataset.
 
 ## Repository Structure
-- `notebooks/`: Contains Jupyter notebooks with code for data preprocessing, model development, and evaluation.
-- `data/`: Holds the Quora Insincere Questions Classification dataset.
-- `models/`: Contains trained model checkpoints.
-- `utils/`: Includes utility functions and scripts used in the project.
+- `1. Data/`: Holds the Quora Insincere Questions Classification dataset.
+- `2. Notebooks/`: Contains Jupyter notebooks with code for data collection, data preprocessing, NLP model development, and evaluation.
+- `3. Models/`: Contains the trained NLP model checkpoints.
+- `4. Utils/`: Includes utility functions and scripts used in the project.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-Tags: insincere-questions, question-classification, natural-language-processing, machine-learning, quora
-
-Tag: #insincere-questions #question-classification #NLP #machine-learning #Quora
