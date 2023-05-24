@@ -1,5 +1,5 @@
 # Quora Insincere Question Classifier
----
+
 ## Insincere Question Classification: Unmasking Deception on Quora
 
 This repository contains the code and resources for the project on insincere question classification on Quora. The goal of this project is to develop a machine learning model that can accurately identify and classify insincere or deceptive questions on the Quora platform.
