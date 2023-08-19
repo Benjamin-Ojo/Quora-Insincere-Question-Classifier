@@ -1,0 +1,24 @@
+name: quora_clasifier
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - tensorflow
+  - keras
+  - jupyter
+  - nltk
+  - spacy
+  - plotly
+  - bokeh
+  - statsmodels
+  - sqlalchemy
+  - requests
+  - beautifulsoup4
+  - xgboost
+  - lightgbm
+  - transformers
+  - scikit-learn-intelex
